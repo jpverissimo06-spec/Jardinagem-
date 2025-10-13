@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Renato Santos - Jardinagem (Home)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html" class="brand">Renato Santos - Jardinagem</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contact.html">Contato</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Renato Santos - Serviços de Jardinagem</h1>
+    <p>
+      Bem-vindo ao site da <strong>Renato Santos - Jardinagem</strong>. Aqui você encontra informações sobre nossos serviços de paisagismo, poda, corte de grama, controle de pragas e um catálogo de plantas disponíveis. 
+    </p>
+
+    <section class="cards">
+      <article class="card">
+        <h2>O que fazemos</h2>
+        <ul>
+          <li>Paisagismo e projetos de jardins</li>
+          <li>Poda de árvores e arbustos</li>
+          <li>Corte e manutenção de gramados</li>
+          <li>Controle de pragas e doenças</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Próximo passo (futuro)</h2>
+        <p>Implementar CRUD para o Catálogo de Plantas e agenda de serviços (backend separado).</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="ano"></span> Renato Santos - Jardinagem</p>
+  </footer>
+
+  <script>
+    // apenas para mostrar o ano atual
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
