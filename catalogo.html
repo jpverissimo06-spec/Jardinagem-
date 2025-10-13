@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo de Plantas - Renato Santos</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilo direto aqui só para garantir */
+    table {
+      width: 100%;
+      border-collapse: collapse; /* junta as bordas */
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #333; /* borda em cada célula */
+      padding: 8px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f2f2f2; /* fundo cinza no cabeçalho */
+    }
+
+    img {
+      width: 100px; /* controla tamanho das imagens */
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html" class="brand"> Renato Santos - Jardinagem</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contact.html">Contato</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Catálogo de Plantas</h1>
+    <p>Tabela com algumas plantas disponíveis:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Preço (R$)</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="samambaia.jpg" alt="Samambaia"></td>
+          <td>Samambaia</td>
+          <td>Folhagem</td>
+          <td>45,00</td>
+          <td>Planta de sombra, ideal para varandas.</td>
+        </tr>
+        <tr>
+          <td><img src="lavanda.webp" alt="Lavanda"></td>
+          <td>Lavanda</td>
+          <td>Flor</td>
+          <td>30,00</td>
+          <td>Perfuma o ambiente e atrai polinizadores.</td>
+        </tr>
+        <tr>
+          <td><img src="suculenta.jpg" alt="Suculenta"></td>
+          <td>Suculenta Mix</td>
+          <td>Suculenta</td>
+          <td>25,00</td>
+          <td>Baixa manutenção, ótima para interiores.</td>
+        </tr>
+        <tr>
+          <td><img src="hortela.jpeg" alt="Hortelã"></td>
+          <td>Hortelã</td>
+          <td>Ervas</td>
+          <td>12,00</td>
+          <td>Ideal para temperos e chás.</td>
+        </tr>
+        <tr>
+          <td><img src="rosa.jpg" alt="Rosa"></td>
+          <td>Rosa Mini</td>
+          <td>Flor</td>
+          <td>60,00</td>
+          <td>Pequenas rosas decorativas para vasos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="ano2"></span> Renato Santos - Jardinagem</p>
+  </footer>
+
+  <script>
+    document.getElementById('ano2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
