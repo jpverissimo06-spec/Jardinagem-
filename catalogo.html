@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Catálogo de Plantas - Renato Santos</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tema dinâmico -->
+  <link id="link-tema" rel="stylesheet" href="styles-claro.css">
+
   <style>
     table {
       width: 100%;
@@ -28,8 +31,23 @@
       height: auto;
       display: block;
     }
+
+    .theme-toggle {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 14px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .theme-toggle:hover {
+      background-color: #3e8e41;
+    }
   </style>
 </head>
+
 <body>
   <header class="navbar">
     <nav>
@@ -40,6 +58,8 @@
         <li><a href="contact.html">Contato</a></li>
         <li><a href="equipe.html">Equipe</a></li>
       </ul>
+      <!-- Botão de alternância de tema -->
+      <button class="theme-toggle" onclick="alternarTema()">Alternar Tema</button>
     </nav>
   </header>
 
@@ -57,8 +77,8 @@
           <th>Descrição</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Linhas serão geradas dinamicamente -->
+      <tbody id="tabela-corpo">
+        <!-- Linhas serão geradas dinamicamente via carrega_dados.js -->
       </tbody>
     </table>
   </main>
@@ -67,11 +87,12 @@
     <p>© <span id="ano2"></span> Renato Santos - Jardinagem</p>
   </footer>
 
+  <!-- Scripts -->
   <script>
     document.getElementById('ano2').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Script para carregar dados -->
   <script src="js/carrega_dados.js"></script>
+  <script src="js/tema.js"></script>
 </body>
 </html>
+
