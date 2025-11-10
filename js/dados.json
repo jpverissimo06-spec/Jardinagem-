@@ -1,0 +1,37 @@
+[
+  {
+    "imagem": "samambaia.jpg",
+    "nome": "Samambaia",
+    "categoria": "Folhagem",
+    "preco": "45,00",
+    "descricao": "Planta de sombra, ideal para varandas."
+  },
+  {
+    "imagem": "lavanda.webp",
+    "nome": "Lavanda",
+    "categoria": "Flor",
+    "preco": "30,00",
+    "descricao": "Perfuma o ambiente e atrai polinizadores."
+  },
+  {
+    "imagem": "suculenta.jpg",
+    "nome": "Suculenta Mix",
+    "categoria": "Suculenta",
+    "preco": "25,00",
+    "descricao": "Baixa manutenção, ótima para interiores."
+  },
+  {
+    "imagem": "hortela.jpeg",
+    "nome": "Hortelã",
+    "categoria": "Ervas",
+    "preco": "12,00",
+    "descricao": "Ideal para temperos e chás."
+  },
+  {
+    "imagem": "rosa.JPG",
+    "nome": "Rosa Mini",
+    "categoria": "Flor",
+    "preco": "60,00",
+    "descricao": "Pequenas rosas decorativas para vasos."
+  }
+]
