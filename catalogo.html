@@ -4,41 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Catálogo de Plantas - Renato Santos</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tema padrão -->
+  <link id="link-tema" rel="stylesheet" href="styles.css">
+
   <style>
-    /* Estilo direto aqui só para garantir */
     table {
       width: 100%;
-      border-collapse: collapse; /* junta as bordas */
+      border-collapse: collapse;
       margin-top: 20px;
     }
 
     th, td {
-      border: 1px solid #333; /* borda em cada célula */
+      border: 1px solid #333;
       padding: 8px;
       text-align: left;
       vertical-align: middle;
     }
 
     th {
-      background-color: #f2f2f2; /* fundo cinza no cabeçalho */
+      background-color: #f2f2f2;
     }
 
     img {
-      width: 100px; /* controla tamanho das imagens */
-      height: auto;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
       display: block;
+      border-radius: 8px;
+    }
+
+    /* Botão de tema */
+    #toggle-tema {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #toggle-tema:hover {
+      background-color: #555;
     }
   </style>
 </head>
+
 <body>
   <header class="navbar">
     <nav>
-      <a href="index.html" class="brand"> Renato Santos - Jardinagem</a>
+      <a href="index.html" class="brand">Renato Santos - Jardinagem</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="contact.html">Contato</a></li>
+        <li><a href="contato.html">Contato</a></li>
         <li><a href="equipe.html">Equipe</a></li>
       </ul>
     </nav>
@@ -48,7 +69,7 @@
     <h1>Catálogo de Plantas</h1>
     <p>Tabela com algumas plantas disponíveis:</p>
 
-    <table>
+    <table id="tabela-produtos">
       <thead>
         <tr>
           <th>Imagem</th>
@@ -59,43 +80,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><img src="samambaia.jpg" alt="Samambaia"></td>
-          <td>Samambaia</td>
-          <td>Folhagem</td>
-          <td>45,00</td>
-          <td>Planta de sombra, ideal para varandas.</td>
-        </tr>
-        <tr>
-          <td><img src="lavanda.webp" alt="Lavanda"></td>
-          <td>Lavanda</td>
-          <td>Flor</td>
-          <td>30,00</td>
-          <td>Perfuma o ambiente e atrai polinizadores.</td>
-        </tr>
-        <tr>
-          <td><img src="suculenta.jpg" alt="Suculenta"></td>
-          <td>Suculenta Mix</td>
-          <td>Suculenta</td>
-          <td>25,00</td>
-          <td>Baixa manutenção, ótima para interiores.</td>
-        </tr>
-        <tr>
-          <td><img src="hortela.jpeg" alt="Hortelã"></td>
-          <td>Hortelã</td>
-          <td>Ervas</td>
-          <td>12,00</td>
-          <td>Ideal para temperos e chás.</td>
-        </tr>
-        <tr>
-          <td><img src="rosa.JPG" alt="rosa"></td>
-          <td>Rosa</td>
-          <td>Flor</td>
-          <td>60,00</td>
-          <td>Pequenas rosas decorativas para vasos.</td>
-        </tr>
+        <!-- Os dados serão carregados automaticamente pelo JS -->
       </tbody>
     </table>
+
+    <!-- Botão de alternância de tema -->
+    <button id="toggle-tema">Alternar Tema</button>
   </main>
 
   <footer class="footer">
@@ -105,5 +95,11 @@
   <script>
     document.getElementById('ano2').textContent = new Date().getFullYear();
   </script>
+
+  <!-- Scripts -->
+  <script src="js/tema.js"></script>
+  <script src="js/carrega_dados.js"></script>
 </body>
 </html>
+
+
